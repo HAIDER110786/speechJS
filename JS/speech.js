@@ -47,4 +47,5 @@ function reply(){
     randomReply.text = replies[Math.floor(Math.random()*replies.length)+1];
     A.textContent = (randomReply.text);
     A.style.display = "block";
+    window.speechSynthesis.speak(randomReply);
 }
